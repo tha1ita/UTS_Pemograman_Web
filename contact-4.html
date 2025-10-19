@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">    
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Hubungi Kami - Rumah Makan Sederhana</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="logo nav__logo">
+          <a href="#">RM <span>Sederhana</span></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn" role="button" tabindex="0" aria-label="Buka menu" aria-controls="nav-link" aria-expanded="false">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+
+      <ul class="nav__links" id="nav-link">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="section__container header__container" id="contact">
+        <div class="contact__layout">
+          <div class="contact__main">
+            <div class="header__content">
+              <h1>Hubungi <span>Kami</span></h1>
+              <p class="section__description">
+                Punya pertanyaan, kritik, atau saran? Silakan sampaikan melalui formulir di bawah ini.
+              </p>
+
+              <form id="contact-form" class="contact__form" action="#" method="post" style="display:grid; gap:12px; margin-top:12px">
+                <label>
+                  <span class="section__description">Nama</span>
+                  <input type="text" name="nama" required style="padding:.75rem; border:1px solid #ddd; border-radius:.5rem; width:100%"/>
+                </label>
+                <labe>
+                  <span class="section__description">Email</span>
+                  <input type="email" name="email" required style="padding:.75rem; border:1px solid #ddd; border-radius:.5rem; width:100%"/>
+                </label>
+                <label>
+                  <span class="section__description">Pesan</span>
+                  <textarea name="pesan" rows="5" required style="padding:.75rem; border:1px solid #ddd; border-radius:.5rem; width:100%"></textarea>
+                </label>
+                <div>
+                  <button type="submit" class="btn">Kirim Pesan</button>
+                </div>
+              </form>
+              
+              <div id="formFeedback" aria-live="polite"></div>
+
+              <br><br>
+              <div class="contact-info">
+                <h3>Informasi Kontak</h3>
+                <div class="info-item">
+                  <span class="icon">📧</span>
+                  <div>
+                    <strong>Email</strong>
+                    <p>rumahmakansederhana@gmail.com</p>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <span class="icon">📱</span>
+                  <div>
+                    <strong>Telepon</strong>
+                    <p>+62 895-3806-76050</p>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <span class="icon">📍</span>
+                  <div>
+                    <strong>Lokasi</strong>
+                    <p>Palembang, Sumatera Selatan, Indonesia</p>
+                  </div>
+                </div>
+                        
+                <div class="social-media">
+                  <h4>Media Sosial</h4>
+                  <div class="social-links">
+                    <a href="https://www.instagram.com/rumah_makan_sederhana_poligon?igsh=Y2NpaTA1ZTB6czhr" class="social-link">Instagram</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <br><br>
+    
+    <script src="script.js" defer></script>
+  </body>
+</html>

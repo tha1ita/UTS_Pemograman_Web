@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Menu - Rumah Makan Sederhana</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="logo">
+          <a href="#">RM <span>Sederhana</span></a>
+        </div>
+        <div
+          class="nav__menu__btn"
+          id="menu-btn"
+          role="button"
+          tabindex="0"
+          aria-label="Buka menu"
+          aria-controls="nav-link"
+          aria-expanded="false"
+        >
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+
+      <ul class="nav__links" id="nav-link">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <div class="nav__btn">
+        <button class="btn" id="open-cart" aria-label="Buka keranjang">
+        <i class="ri-shopping-bag-fill"></i>
+        <span class="cart__badge" id="cart-count" aria-live="polite">0</span>
+        </button>
+      </div>
+    </nav>
+
+    <main class="section__container menu__container" id="menu">
+      <header class="menu__header">
+        <h1>Pilih Menu <span>Favorit Anda</span></h1>
+        <p class="section__description">Tambahkan ke keranjang lalu tunggu proses pemesanan Anda.</p>
+      </header>
+
+      <div class="menu__layout"> 
+        <section class="menu__grid" aria-label="Daftar menu"> 
+          <article class="menu__card" data-id="1" data-name="Nasi Goyeng Seafood" data-price="25000">
+            <img class="menu__thumb" src="assets/nasigoyeng.jpg" alt="Nasi Goyeng Seafood"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Nasi Goyeng Seafood</h3>
+              <p class="menu__price">Rp 25.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Nasi Goyeng Seafood ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="2" data-name="Ayam Gemes" data-price="32000">
+            <img class="menu__thumb" src="assets/ayamgemes.jpg" alt="Ayam Gemes"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Ayam Gemes</h3>
+              <p class="menu__price">Rp 32.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Ayam Gemes ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="3" data-name="Nasi Ikan Buakar" data-price="30000">
+            <img class="menu__thumb" src="assets/ikanbuakar.jpg" alt="Nasi Ikan Buakar"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Nasi Ikan Buakar</h3>
+              <p class="menu__price">Rp 30.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Nasi Ikan Buakar ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="4" data-name="Nasi Rawon Dageng" data-price="38000">
+            <img class="menu__thumb" src="assets/rawon.jpg" alt="Nasi Rawon Dageng"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Nasi Rawon Dageng</h3>
+              <p class="menu__price">Rp 38.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Nasi Rawon Dageng ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="5" data-name="Nasi Babat Special" data-price="23000">
+            <img class="menu__thumb" src="assets/nasibabat.jpg" alt="Nasi Babat Special"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Nasi Babat Special</h3>
+              <p class="menu__price">Rp 23.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Nasi Babat Special ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="6" data-name="Nasi Bakar Ayam Suwir" data-price="25000">
+            <img class="menu__thumb" src="assets/ayambakar.jpg" alt="Nasi Bakar Ayam Suwir"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Nasi Bakar Ayam Suwir</h3>
+              <p class="menu__price">Rp 25.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Nasi Bakar Ayam Suwir ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="7" data-name="Mie Banglades" data-price="18000">
+            <img class="menu__thumb" src="assets/miebangladesh.jpg" alt="Mie Bangladesh"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Mie Bangladesh</h3>
+              <p class="menu__price">Rp 18.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Mie Banglades ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="8" data-name="Mie Ketiwaw" data-price="25000">
+            <img class="menu__thumb" src="assets/mieketiwow.jpg" alt="Mie Ketiwow"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Mie Ketiwaw</h3>
+              <p class="menu__price">Rp 25.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Mie Ketiwaw ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="9" data-name="Mie Goyeng" data-price="17000">
+            <img class="menu__thumb" src="assets/miegoyeng.jpg" alt="Mie Goyeng"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Mie Goyeng</h3>
+              <p class="menu__price">Rp 17.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Mie Goyeng ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="10" data-name="Mie Banjir" data-price="18000">
+            <img class="menu__thumb" src="assets/miebanjir.jpg" alt="Mie Banjir"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Mie Banjir</h3>
+              <p class="menu__price">Rp 18.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Mie Banjir ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="11" data-name="Mie Ayam" data-price="20000">
+            <img class="menu__thumb" src="assets/mieayam.jpg" alt="Mie Ayam"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Mie Ayam</h3>
+              <p class="menu__price">Rp 20.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Mie Ayam ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="12" data-name="Tahu Gimbal" data-price="12000">
+            <img class="menu__thumb" src="assets/tahucrispy.jpg" alt="Tahu Gimbal"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Tahu Gimbal</h3>
+              <p class="menu__price">Rp 12.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Tahu Gimbal ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="13" data-name="Donat Bom" data-price="15000">
+            <img class="menu__thumb" src="assets/bomboloni.jpg" alt="Donat Bom"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Donat Bom</h3>
+              <p class="menu__price">Rp 15.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Donat Bom ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="14" data-name="Wonton Banjir" data-price="15000">
+            <img class="menu__thumb" src="assets/wonton.jpg" alt="Wonton Banjir"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Wonton Banjir</h3>
+              <p class="menu__price">Rp 15.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Wonton Banjir ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="15" data-name="Pisang Angin" data-price="12000">
+            <img class="menu__thumb" src="assets/pisangkipas.jpg" alt="Pisang Angin"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Pisang Angin</h3>
+              <p class="menu__price">Rp 12.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Pisang Angin ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="16" data-name="Tempe Mendoan" data-price="10000">
+            <img class="menu__thumb" src="assets/mendoan.jpg" alt="Tempe Mendoan"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Tempe Mendoan</h3>
+              <p class="menu__price">Rp 10.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Tempe Mendoan ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="17" data-name="Kentang Goreng" data-price="15000">
+            <img class="menu__thumb" src="assets/kentanggoreng.jpg" alt="Kentang Goreng"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Kentang Goreng</h3>
+              <p class="menu__price">Rp 15.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Kentang Goreng ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="18" data-name="Jus Alpukat" data-price="10000">
+            <img class="menu__thumb" src="assets/jusalfukat.jpg" alt="Jus Alpukat"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Jus Alpukat</h3>
+              <p class="menu__price">Rp 10.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Jus Alpukat ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="19" data-name="Jus Mangga" data-price="8000">
+            <img class="menu__thumb" src="assets/juspelem.jpg" alt="Jus Mangga"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Jus Mangga</h3>
+              <p class="menu__price">Rp 8.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Jus Mangga ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="20" data-name="Es Teh Manis" data-price="5000">
+            <img class="menu__thumb" src="assets/esteh.jpg" alt="Es Teh Manis"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Es Teh Manis</h3>
+              <p class="menu__price">Rp 5.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Es Teh Manis ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="21" data-name="Es Jeyuk" data-price="5000">
+            <img class="menu__thumb" src="assets/esjeyuk.jpg" alt="Es Jeyuk"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Es Jeyuk</h3>
+              <p class="menu__price">Rp 5.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Es Jeyuk ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="22" data-name="Es Campyur" data-price="12000">
+            <img class="menu__thumb" src="assets/escampyur.jpg" alt="Es Campyur"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Es Campyur</h3>
+              <p class="menu__price">Rp 12.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Es Campyur ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="23" data-name="Es Gedang Ijo" data-price="12000">
+            <img class="menu__thumb" src="assets/esgedangijo.jpg" alt="Es Gedang Ijo"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Es Gedang Ijo</h3>
+              <p class="menu__price">Rp 12.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Es Gedang Ijo ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+
+          <article class="menu__card" data-id="24" data-name="Soda Bahagia" data-price="8000">
+            <img class="menu__thumb" src="assets/sodabahagia.jpg" alt="Soda Bahagia"/>
+            <div class="menu__info">
+              <h3 class="menu__title">Soda Bahagia</h3>
+              <p class="menu__price">Rp 8.000</p>
+            </div>
+            <button class="btn add-btn" aria-label="Tambah Soda Bahagia ke keranjang">
+              <i class="ri-add-circle-fill" style="margin-right:6px"></i>Tambah
+            </button>
+          </article>
+        </section>
+
+        <aside class="cart" aria-label="Keranjang belanja">
+          <h2>Keranjang</h2>
+          <ul class="cart__items" id="cart-items" aria-live="polite"></ul>
+
+          <div class="cart__summary">
+            <div class="cart__row">
+              <span>Subtotal</span>
+              <strong id="cart-subtotal">Rp 0</strong>
+            </div>
+            <div class="cart__row">
+              <span>Biaya Layanan 10%</span>
+              <strong id="cart-fee">Rp 0</strong>
+            </div>
+            <div class="cart__row cart__total">
+              <span>Total</span>
+              <strong id="cart-total">Rp 0</strong>
+            </div>
+            <button class="btn" id="checkout-btn" disabled>Proses Pesanan</button>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <dialog id="checkout-dialog" class="checkout__dialog" aria-label="Formulir Proses Pesanan">
+      <form id="checkout-form" method="dialog" class="checkout__form">
+        <h3>Detail Pemesan</h3>
+
+        <label class="field">
+          <span>Nama</span>
+          <input type="text" name="nama" required placeholder="Nama lengkap"/>
+        </label>
+
+        <label class="field">
+          <span>Metode Pembayaran</span>
+          <select name="pembayaran" required>
+            <option value="" disabled selected>Pilih metode</option>
+            <option value="Tunai">Tunai</option>
+            <option value="QRIS">QRIS</option>
+            <option value="Kartu">Kartu</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Mode Pesanan</span>
+          <select name="mode" required>
+            <option value="" disabled selected>Pilih tempat makan</option>
+            <option value="Take Away">Take Away</option>
+            <option value="Dine-In">Dine-In</option>
+          </select>
+        </label>
+
+        <div class="checkout__actions">
+          <button type="button" class="btn btn--ghost" id="cancel-checkout">Batal</button>
+          <button type="submit" class="btn">Konfirmasi Pesanan</button>
+      </form>
+    </dialog>
+    
+    <script src="script.js" defer></script>
+  </body>
+</html>
