@@ -79,10 +79,21 @@ Form untuk nama pemesan Pilihan metode pembayaran (Tunai, QRIS, Kartu) Pilihan m
 Dokumentasi Website Tampilan Dekstop
 
 1. Halaman Home (index.html)
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/aa079c10-5559-432e-b23b-1e66e62ae81e" />
 
 2. Halaman Menu (menu.html)
+
+<img width="1600" height="885" alt="image" src="https://github.com/user-attachments/assets/7a812507-3904-4110-9702-c24802d901fe" />
+
+<img width="1600" height="892" alt="image" src="https://github.com/user-attachments/assets/9430e414-663a-45be-a27f-507b9821eef6" />
+
 <img width="1541" height="218" alt="image" src="https://github.com/user-attachments/assets/042138a8-72b3-439c-851e-409b045d041e" />
 
 3.Halaman Abaout (about.html)
+<img width="1600" height="883" alt="image" src="https://github.com/user-attachments/assets/5c4c1a75-2a26-469f-9689-25ba577748ad" />
+
 
 4. Halaman contact Us (contact.html)
+<img width="1600" height="889" alt="image" src="https://github.com/user-attachments/assets/fdc21e22-4c6c-4880-825b-ce477fef4cd5" />
+<img width="1600" height="891" alt="image" src="https://github.com/user-attachments/assets/031d5acb-db0f-443f-979a-1e4eca1aac6d" />
+
